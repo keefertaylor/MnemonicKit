@@ -574,7 +574,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MnemonicKit.app/MnemonicKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MnemonicKitExampleApp.app/MnemonicKitExampleApp";
 			};
 			name = Debug;
 		};
@@ -595,7 +595,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MnemonicKit.app/MnemonicKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MnemonicKitExampleApp.app/MnemonicKitExampleApp";
 			};
 			name = Release;
 		};
