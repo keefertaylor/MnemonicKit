@@ -12,7 +12,7 @@
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Keefer Taylor" => "keefer@keefertaylor.com" }
   s.source       = { :git => "https://github.com/keefertaylor/MnemonicKit.git", :tag => "1.3.9" }
-  s.source_files  = "MnemonicKit/**/*.swift",
+  s.source_files  = "Sources/MnemonicKit/**/*.swift",
   s.swift_version = "4.2"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
