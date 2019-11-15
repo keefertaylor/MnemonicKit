@@ -64,3 +64,10 @@ screenshots
 # Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+### SwiftPM ###
+Packages
+.build/
+xcuserdata
+DerivedData/
+*.xcodeproj
