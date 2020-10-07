@@ -11,12 +11,22 @@ let package = Package(
     targets: [
         .target(
             name: "MnemonicKit_iOS",
-            dependencies: ["CryptoSwift"],
+            dependencies: [
+                .package(
+                    url: "https://github.com/krzyzanowskim/CryptoSwift", 
+                    from: "1.3.2"
+                )
+            ],
             path: "MnemonicKit",
             exclude: ["Info.plist"]),
         .target(
             name: "MnemonicKit_macOS",
-            dependencies: ["CryptoSwift"],
+            dependencies: [
+                .package(
+                    url: "https://github.com/krzyzanowskim/CryptoSwift", 
+                    from: "1.3.2"
+                )
+            ],
             path: "MnemonicKit",
             exclude: ["Info.plist"]),
         .testTarget(
