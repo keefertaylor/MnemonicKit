@@ -25,9 +25,5 @@ let package = Package(
             dependencies: ["CryptoSwift"],
             path: "MnemonicKit",
             exclude: ["Info.plist"]),
-        .testTarget(
-            name: "MnemonicKitTests",
-            dependencies: ["MnemonicKit"],
-            exclude: ["Info.plist"]),
     ]
 )
