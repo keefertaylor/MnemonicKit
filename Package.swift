@@ -3,6 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "MnemonicKit",
+    platforms: [
+        .macOS(.v10_12),
+        .iOS(.v8)//,
+    ],
     products: [
         .library(
             name: "MnemonicKit",
@@ -17,11 +21,6 @@ let package = Package(
     targets: [
         .target(
             name: "MnemonicKit_iOS",
-            dependencies: ["CryptoSwift"],
-            path: "MnemonicKit",
-            exclude: ["Info.plist"]),
-        .target(
-            name: "MnemonicKit_macOS",
             dependencies: ["CryptoSwift"],
             path: "MnemonicKit",
             exclude: ["Info.plist"]),
