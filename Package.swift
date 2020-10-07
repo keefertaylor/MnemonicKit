@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "MnemonicKit",
-            targets: ["MnemonicKit_iOS", "MnemonicKit_macOS"]),
+            targets: ["MnemonicKit_iOS"]),
     ],
     dependencies: [
         .package(
