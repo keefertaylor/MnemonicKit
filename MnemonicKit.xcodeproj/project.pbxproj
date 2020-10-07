@@ -14,6 +14,12 @@
 		59FE4CF322226154B9B687CE /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8871A4FF644B8E4F13723E6 /* CryptoSwift.framework */; };
 		5A11F552AAEA9E58CE8CC50D /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8871A4FF644B8E4F13723E6 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		81D18E658D26212E4D7647D8 /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6CB62D82160ACBA1512E /* String+MnemonicData.swift */; };
+		853046A6252D93D10045DC7E /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E025936BA30D49D80AF51 /* Chinese.swift */; };
+		853046A7252D93D10045DC7E /* Data+BitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9394FFD7755F40E53D60E /* Data+BitArray.swift */; };
+		853046A8252D93D10045DC7E /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F81AB601CF04F3F1E52E3 /* English.swift */; };
+		853046A9252D93D10045DC7E /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B9024EB02AB18E1F44789A /* Mnemonic.swift */; };
+		853046AA252D93D10045DC7E /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6CB62D82160ACBA1512E /* String+MnemonicData.swift */; };
+		853046AD252D93D10045DC7E /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1EBAC8ABDF9E72ABA1B642 /* CryptoSwift.framework */; };
 		8DC3D3DA23DBEAD93257DE4F /* MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7EE929BD11BA8AB38F9C19 /* MnemonicKit.framework */; };
 		8EAFFDA8F2A30674EA9EBBBC /* Data+BitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9394FFD7755F40E53D60E /* Data+BitArray.swift */; };
 		934F1409AF864AAA0AB52FDA /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F81AB601CF04F3F1E52E3 /* English.swift */; };
@@ -85,6 +91,8 @@
 		256E6CB62D82160ACBA1512E /* String+MnemonicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
 		65B1627123A1131289B4110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7DCB97C4881969FDB72C61DB /* MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853046B1252D93D10045DC7E /* MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853046B2252D93D20045DC7E /* MnemonicKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MnemonicKit-Info.plist"; path = "/Users/jacky/Desktop/Workspaces/tezos/MnemonicKit/MnemonicKit-Info.plist"; sourceTree = "<absolute>"; };
 		BA1EBAC8ABDF9E72ABA1B642 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
 		C3E5287598681E0527694214 /* vectors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
 		D2D9394FFD7755F40E53D60E /* Data+BitArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+BitArray.swift"; sourceTree = "<group>"; };
@@ -107,6 +115,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				985214FD923DB7C6DDBA36EF /* MnemonicKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853046AC252D93D10045DC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853046AD252D93D10045DC7E /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +203,7 @@
 		CBCDA5914B8679B57A496D9A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				853046B2252D93D20045DC7E /* MnemonicKit-Info.plist */,
 				23F75813C686C37B78DE459E /* Info.plist */,
 				0A5EC633D7524CD344B44513 /* MnemonicKitTests.swift */,
 				C3E5287598681E0527694214 /* vectors.json */,
@@ -211,6 +228,7 @@
 				DC7EE929BD11BA8AB38F9C19 /* MnemonicKit.framework */,
 				1645FE576891F45DC72864F6 /* MnemonicKitTests.xctest */,
 				EBA32888ED203FE1DA16BFF1 /* MnemonicKitTests.xctest */,
+				853046B1252D93D10045DC7E /* MnemonicKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +289,23 @@
 			productReference = EBA32888ED203FE1DA16BFF1 /* MnemonicKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		853046A4252D93D10045DC7E /* MnemonicKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853046AE252D93D10045DC7E /* Build configuration list for PBXNativeTarget "MnemonicKit" */;
+			buildPhases = (
+				853046A5252D93D10045DC7E /* Sources */,
+				853046AB252D93D10045DC7E /* SwiftLint */,
+				853046AC252D93D10045DC7E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MnemonicKit;
+			productName = MnemonicKit_iOS;
+			productReference = 853046B1252D93D10045DC7E /* MnemonicKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D57DFC1DDD9E99A6F84A0A0B /* MnemonicKitTests_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D81EB8096D3E6550D6B8607 /* Build configuration list for PBXNativeTarget "MnemonicKitTests_iOS" */;
@@ -297,8 +332,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = F5079FB8BED8C51BDEEB8C7C /* Build configuration list for PBXProject "MnemonicKit" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -315,6 +348,7 @@
 				6C3E5C33EDE0FF1268354BCC /* MnemonicKitTests_macOS */,
 				3965BB285FF94319B8863435 /* MnemonicKit_iOS */,
 				3A14B55BA3F3716B46D8CA3F /* MnemonicKit_macOS */,
+				853046A4252D93D10045DC7E /* MnemonicKit */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +373,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		853046AB252D93D10045DC7E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint autocorrect --config .swiftlint.yml";
+		};
 		992C7E7D41706D89AF40F3B0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,6 +451,18 @@
 				934F1409AF864AAA0AB52FDA /* English.swift in Sources */,
 				122777029525BA9CC4F9A958 /* Mnemonic.swift in Sources */,
 				81D18E658D26212E4D7647D8 /* String+MnemonicData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853046A5252D93D10045DC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853046A6252D93D10045DC7E /* Chinese.swift in Sources */,
+				853046A7252D93D10045DC7E /* Data+BitArray.swift in Sources */,
+				853046A8252D93D10045DC7E /* English.swift in Sources */,
+				853046A9252D93D10045DC7E /* Mnemonic.swift in Sources */,
+				853046AA252D93D10045DC7E /* String+MnemonicData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +675,66 @@
 			};
 			name = Debug;
 		};
+		853046AF252D93D10045DC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "MnemonicKit_iOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		853046B0252D93D10045DC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "MnemonicKit_iOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		8B38DB2F96313C308F6E7C2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -654,7 +778,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
@@ -711,7 +840,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -759,6 +893,15 @@
 			buildConfigurations = (
 				7ED19984DD4BD178E30DF4F7 /* Debug */,
 				502686BD02E44AFEF1774FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		853046AE252D93D10045DC7E /* Build configuration list for PBXNativeTarget "MnemonicKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853046AF252D93D10045DC7E /* Debug */,
+				853046B0252D93D10045DC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
