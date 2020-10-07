@@ -518,7 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keefertaylor.MnemonicKit-iOS";
 				PRODUCT_NAME = MnemonicKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -645,7 +645,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keefertaylor.MnemonicKit-iOS";
 				PRODUCT_NAME = MnemonicKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -695,7 +695,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keefertaylor.MnemonicKit-iOS";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -724,7 +725,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keefertaylor.MnemonicKit-iOS";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
