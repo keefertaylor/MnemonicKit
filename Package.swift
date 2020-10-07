@@ -5,7 +5,7 @@ let package = Package(
     name: "MnemonicKit",
     platforms: [
         .macOS(.v10_12),
-        .iOS(.v8)//,
+        .iOS(.v9)//,
     ],
     products: [
         .library(
